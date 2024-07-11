@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1288px;
+    border: 1px solid lightblue;
+}
+
+.custom-margin {
+    margin-left: 37px;
+    margin-right: 37px;
+    }
+
+.lobster-400 {
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 46px;
+        font-size: 37px;
+    }
+    
+.navbar {
+    background-color: #373A3C;
+}
+
+.navbar-toggler {
+    border: 1pt solid #ffffff;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    border: 1pt solid #DDDDDD;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: 0px;
+    margin-left: 440px;
+    width: 100px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: gray; /* Color de los indicadores */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: black; /* Color del indicador activo */
+}
+
+.linea {
+    max-width: 100%;
+    height: 0.5px;
+    background-color: #000000; 
+    margin-top: 20px; 
+    margin-bottom: 30PX;
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.cabin-700 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+}
+
+p.cabin-700 {
+    line-height: 49px;
+    font-size: 40px;
+}
+
+.cabin-400 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+p.cabin-400 {
+    color: #373A3C;
+    line-height: 30px;
+    font-size: 20pt;
+    letter-spacing: 0.6pt;
+}
+
+.recetas {
+    margin-top: 115.5px;
+    margin-bottom: 50.5px;
+    height: 50px;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    text-align: center;
+    font: normal normal bold 40px "Cabin", sans-serif;
+    line-height: 49pt;
+    color: #373A3C;
+    opacity: 1;
+    }
+
+.otraCard {
+    margin-left: 16px; 
+    margin-right: 16px;
+}
+
+@media (max-width: 768px) { /* xs and sm */
+    p.cabin-700 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.cabin-400 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0pt;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .recetas {
+        margin-top: 56.5px;
+        margin-bottom: 38.5px;
+        height: 63px;
+        display: flex; /* Usamos flexbox */
+        justify-content: center; /* Centramos horizontalmente */
+        align-items: center; /* Centramos verticalmente */
+        text-align: center;
+        font: normal normal bold 25px "Cabin", sans-serif;
+        line-height: 30px;
+        color: #373A3C;
+        opacity: 1;
+        }
+
+    .otraCard {
+        margin: 0px;
+        margin-top: 26.18px; 
+        margin-bottom: 26.18px;
+        }
+}
+
+@media (min-width: 1200px) {
+    .custom-margin {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
