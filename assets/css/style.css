@@ -2,22 +2,22 @@
     margin: 0;
     padding: 0;
     max-width: 1288px;
-    border: 1px solid lightblue;
+    /*border: 1px solid lightblue;*/
 }
 
 .custom-margin {
     margin-left: 37px;
     margin-right: 37px;
-    }
+}
 
 .lobster-400 {
-        font-family: "Lobster", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 46px;
-        font-size: 37px;
-    }
-    
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 46px;
+    font-size: 37px;
+}
+
 .navbar {
     background-color: #373A3C;
 }
@@ -39,6 +39,20 @@
     box-shadow: none;
 }
 
+button.title {
+    background-color: #373A3C;
+    color: white;
+}
+
+.tooltip-inner {
+    background-color: #373A3C;
+    color: #ffffff; 
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #373A3C; 
+}
+
 .carousel-indicators {
     position: relative;
     bottom: 0px;
@@ -57,12 +71,22 @@
     background-color: black; /* Color del indicador activo */
 }
 
-.linea {
+.linea1 {
+    max-width: 100%;
+    height: 0.5px;
+    background-color: #000000;
+}
+
+.linea2 {
     max-width: 100%;
     height: 0.5px;
     background-color: #000000; 
-    margin-top: 20px; 
-    margin-bottom: 30PX;
+}
+
+.linea3 {
+    max-width: 100%;
+    height: 0.5px;
+    background-color: #000000; 
 }
 
 .imagen {
@@ -70,8 +94,17 @@
     height: auto;
 }
 
-.card {
-    margin-top: 20px;
+.lado-izquierdo {
+    padding-left: 16px;
+    text-align: left;
+}
+
+#enviarCorreo {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
 .cabin-700 {
@@ -96,8 +129,21 @@ p.cabin-400 {
     letter-spacing: 0.6pt;
 }
 
+#spoon1 {
+    user-select: none; /* Para la mayoría de los navegadores */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+#spoon2 {
+    user-select: none; /* Para la mayoría de los navegadores */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 .recetas {
-    margin-top: 115.5px;
     margin-bottom: 50.5px;
     height: 50px;
     display: flex; /* Usamos flexbox */
@@ -110,12 +156,67 @@ p.cabin-400 {
     opacity: 1;
     }
 
+.card {
+    margin-top: 20px;
+}
+
 .otraCard {
     margin-left: 16px; 
     margin-right: 16px;
 }
 
-@media (max-width: 768px) { /* xs and sm */
+.contenedor-footer {
+    background-color: #DC3545;
+    height: 534px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-footer-1 {
+    margin-top: 150px;
+    margin-left: 150px; 
+    margin-right: 150px;   
+    line-height: 49px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.texto-footer-2 {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.boton {
+    color: white;
+    background-color:  #DC3545;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 233px; 
+    height: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) { /* Tamaños xs y sm */
+
+    .lado-izquierdo {
+        padding-top: 13.5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 25pt;
+        line-height: 30pt;
+        text-align: center;
+    }
+    #enviarCorreo {
+        width: 140px;
+        font-size: 13px;
+        margin: 0px;
+    }
     p.cabin-700 {
         font-size: 25px;
         line-height: 30px;
@@ -130,8 +231,11 @@ p.cabin-400 {
         display: none;
     }
 
+    .linea2 {
+        display: none
+    }
+
     .recetas {
-        margin-top: 56.5px;
         margin-bottom: 38.5px;
         height: 63px;
         display: flex; /* Usamos flexbox */
@@ -149,9 +253,50 @@ p.cabin-400 {
         margin-top: 26.18px; 
         margin-bottom: 26.18px;
         }
+
+    .contenedor-footer {
+        background-color: #DC3545;
+        height: 534px;
+        max-width: 100%;
+        justify-content: center; 
+    }
+
+    .texto-footer-1 {
+        height: 112pt;
+        width: 250px;
+        margin-top: 40px;
+        margin-left: 37pt;
+        margin-right: 37pt;
+        font-family: "Cabin", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        line-height: 37px;
+        font-size: 30px;
+    }
+
+    .texto-footer-2 {
+        margin-left: 37pt;
+        margin-right: 37pt;
+        padding: 0px;
+        margin-bottom: 8px;
+        width: 250px;
+    }
+
+    span.cabin-400 {
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    span.lobster-400 {
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 25px;
+        font-size: 22px;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
     .custom-margin {
         margin-left: 150px;
         margin-right: 150px;
